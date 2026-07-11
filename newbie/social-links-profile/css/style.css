@@ -1,0 +1,99 @@
+:root {
+    --bg-color: hsl(0, 0%, 8%);
+    --card-bg: hsl(0, 0%, 12%);
+    --button-bg: hsl(0, 0%, 20%);
+    --font-color: hsl(0, 0%, 100%);
+    --flashy-color: hsl(75, 94%, 57%);
+
+    --title-weight: 700;
+    --light-weight: 400;
+    --button-weight: 600;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+html {
+    font-size: 87.5%;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'Inter', sans-serif;
+    color: var(--font-color);
+    min-height: 100dvh;
+    padding: 2rem 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: var(--card-bg);
+    width: 90%;
+    max-width: 360px;
+    margin: 0;
+    padding: 2.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+figure {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.avatar {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+}
+
+.name {
+    font-size: 1.7rem;
+    font-weight: var(--title-weight);
+    margin-bottom: 0;
+    margin-top: 1.5rem;
+}
+
+.place {
+    font-size: 1rem;
+    font-weight: var(--button-weight);
+    color: var(--flashy-color);
+    margin: 0;
+}
+
+.description {
+    margin: 1.5rem 0 1rem;
+    font-size: 1rem;
+    font-weight: var(--light-weight);
+    text-align: center;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+a {
+    font-size: 1rem;
+    font-weight: var(--button-weight);
+    color: inherit;
+    text-decoration: none;
+    background-color: var(--button-bg);
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+a:hover, a:focus {
+    background-color: var(--flashy-color);
+    color: var(--bg-color);
+}

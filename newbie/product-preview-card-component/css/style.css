@@ -1,0 +1,114 @@
+*, ::before, ::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    min-height: 100dvh;
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: hsl(0, 0%, 100%);
+    width: 90%;
+    max-width: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.mobile-img {
+    width: 100%;
+}
+
+.desktop-img {
+    display: none;
+}
+
+.content {
+    font-family: Montserrat, sans-serif;
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.perfume {
+    letter-spacing: 0.25rem;
+    font-weight: 600;
+}
+
+h1 {
+    font-family:Fraunces, Georgia, serif;
+    color: hsl(212, 21%, 14%);
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.price span {
+    font-family: Fraunces, Georgia, 'Cooper Black';
+    font-size: 2rem;
+    font-weight: 700;
+    color:  hsl(158, 36%, 37%);
+    padding-right: 1rem;
+}
+
+.price del {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: hsl(228, 12%, 48%);
+    vertical-align:0.5rem;
+}
+
+button {
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    color:  hsl(0, 0%, 100%);
+    font-size: 1.25rem;
+    font-weight: 700;
+    border-style: none;
+}
+
+button:hover, 
+button:focus {
+    background-color: hsl(158, 42%, 18%);
+}
+
+button:focus-visible {
+    outline: 3px solid hsl(158, 36%, 60%);
+    outline-offset: 2px;
+}
+
+@media screen and (min-width: 768px) {
+    .card {
+        flex-direction: row;
+    }
+    .image {
+        min-width: 50%;
+    }
+    .desktop-img {
+        display: block;
+        width: 100%;
+    }
+    .mobile-img {
+        display: none;
+    }
+    .content {
+        gap: 1rem;
+        padding: 1rem;
+    }
+}

@@ -1,0 +1,84 @@
+:root {
+    --color-bg: hsl(47, 88%, 63%);
+    --card-bg: hsl(0, 0%, 100%);
+    --txt-base: hsl(0, 0%, 42%);
+    --txt-main: hsl(0, 0%, 7%);
+    --weight-base: 500;
+    --weight-main: 800;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-bg);
+    font-family: 'Figtree', sans-serif;
+    font-size: 16px;
+    font-weight: var(--weight-base);
+    color:var(--txt-main);
+    min-height: 100dvh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: var(--card-bg);
+    width: 90%;
+    max-width: 400px;
+    padding: 1.25rem;
+    border-radius: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    box-shadow: 8px 8px 0 var(--txt-main);
+}
+
+.card__image {
+    width:100%;
+    border-radius: 1rem;
+}
+
+.card__tag {
+    background-color: var(--color-bg);
+    font-weight: var(--weight-main);
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+    align-self: flex-start;
+}
+.card__date {
+    margin: 0;
+}
+
+.card__title {
+    font-weight: var(--weight-main);
+    margin: 0;
+}
+
+.card__title a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.card__title a:hover {
+    color: var(--color-bg);
+}
+
+.card__description {
+    color: var(--txt-base);
+    margin: 0;
+}
+
+.card__author {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.card__avatar {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
