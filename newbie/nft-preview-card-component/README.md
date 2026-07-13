@@ -1,8 +1,8 @@
 # NFT Preview Card Component
 
-A Newbie-tier challenge from [Frontend Mentor](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbwUGhF_H) — building a static preview card for an NFT listing: image with a hover state, title, price, countdown, and creator info.
+A Newbie-tier challenge from [Frontend Mentor](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U) — building a static preview card for an NFT listing: image with a hover state, title, price, countdown, and creator info.
 
-**Live demo:** [add link once deployed]
+**Live demo:** https://tesidrah.github.io/frontend-learning-log/newbie/nft-preview-card-component/
 
 This is a Newbie-tier practice project, one step toward Junior — not client-ready work. It's here as evidence of the build-and-fix process, not a finished product.
 
