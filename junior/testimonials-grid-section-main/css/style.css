@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100dvh;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    background-color: hsl(214, 17%, 92%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    margin-top: 2rem;
+
+}
+
+.card {
+    width: 80%;
+    max-width: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin: 4rem 0;
+}
+
+article {
+    line-height: 1.6rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 3.5rem 3.5rem 5rem -2rem  hsl(224, 10%, 45%);
+}
+
+.daniel {
+    background-color: hsl(263, 55%, 52%);
+    color:hsl(214, 17%, 92%);
+}
+
+.jonathan {
+    background-color: hsl(217, 19%, 35%);
+    color:hsl(214, 17%, 92%);
+}
+
+.jeanette {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(217, 19%, 35%);
+}
+
+.patrick {
+    background-color:  hsl(219, 29%, 14%);
+    color:  hsl(214, 17%, 92%);
+}
+
+
+.kira {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(217, 19%, 35%);
+}
+
+.quotation {
+    display: none;
+}
+
+.figure {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.avatar {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+}
+
+.main-quote {
+    color:  hsl(0, 0%, 100%);
+    font-size: 1.55rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    line-height: 1.8rem;
+}
+
+h2,
+span {
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+.jeanette .main-quote {
+    color: hsl(217, 19%, 35%);
+}
+
+.kira .main-quote {
+    color: hsl(217, 19%, 35%);
+}
+
+@media screen and (min-width: 80rem) {
+    .card {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas: 
+        "daniel  daniel   jonathan kira"
+        "jeanette patrick patrick  kira";
+        align-items: stretch;
+        gap: 2rem;
+        width: 90%;
+        max-width: 75rem;
+    }
+    .daniel   { grid-area: daniel;
+        position: relative;
+    }
+    .jonathan { grid-area: jonathan; }
+    .jeanette { grid-area: jeanette; }
+    .patrick  { grid-area: patrick; }
+    .kira     { grid-area: kira; }
+
+    article {
+    line-height: 1.4rem;
+    font-size: .9rem;
+    padding: 2rem;
+    }
+    .main-quote {
+    font-size: 1.25rem;
+    line-height: 1.6rem;
+    }
+    .quotation {
+        position: absolute;
+        display: block;
+        top: 0;
+        right: 4rem;
+        z-index: 0;
+        opacity: 70%;
+    }
+
+    .figure,
+    .daniel > div:last-child {
+        position: relative;
+        z-index: 1;
+}
+}
+    
