@@ -15,6 +15,9 @@ Each challenge has its own folder with its own README, source, and live demo.
 - [social-links-profile](newbie/social-links-profile) — [live demo](https://tesidrah.github.io/frontend-learning-log/newbie/social-links-profile/)
 - [product-preview-card-component](newbie/product-preview-card-component) — [live demo](https://tesidrah.github.io/frontend-learning-log/newbie/product-preview-card-component/)
 - [nft-preview-card-component](newbie/nft-preview-card-component) — [live demo](https://tesidrah.github.io/frontend-learning-log/newbie/nft-preview-card-component/)
+
+## junior
+
 - [testimonials-grid-section](junior/testimonials-grid-section) — [live demo](https://tesidrah.github.io/frontend-learning-log/junior/testimonials-grid-section/)
 
 New challenges get added to this repo, under their tier, as they're completed.
