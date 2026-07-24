@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+--box-bg: hsl(225, 100%, 98%);    
+--card-bg: hsl(0, 0%, 100%);       
+--page-bg: hsl(225, 100%, 94%);     
+--link-bg: hsl(245, 75%, 52%);     
+--p-font: hsl(224, 23%, 55%);       
+--header-font: hsl(223, 47%, 23%);  
+}
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--page-bg);
+    background-image: url(../images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 100dvh;
+    font-family: "Red Hat Display", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: var(--card-bg);
+    width: 90%;
+    max-width: 25rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 2rem 3rem -1rem hsl(223, 47%, 23%, 0.15);
+}
+
+.hero {
+    width: 100%;  
+}
+
+.summary {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--header-font);
+}
+
+p {
+    font-size:1rem;  
+    font-weight: 500;
+    color: var(--p-font);
+    text-align: center;
+}
+.box {
+    width: 100%;
+    background-color: var(--box-bg);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+.annual-plan {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.price-head {
+    font-weight: 700;
+    color: var(--header-font);
+}
+
+.price-tag {
+    font-weight: 500;
+    color: var(--p-font);
+}
+
+.box-button {
+    background-color: inherit;
+    text-decoration: underline;
+    color: var(--link-bg);
+    border: none;
+    font-weight: 700;
+}
+
+a {
+    width: 100%;
+    background-color: var(--link-bg);
+    text-decoration: none;
+    color: var(--card-bg);
+    font-weight: 900;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 2rem 0 hsl(245, 75%, 52%, 0.4);
+}
+
+.order-button {
+    background-color: inherit;
+    color: var(--p-font);
+    border: none;
+    font-weight: 700;
+}
+
+.box-button:hover {
+    color:hsl(245, 75%, 52%, 0.7);
+    cursor: pointer;
+}
+
+a:hover {
+    background-color: hsl(245, 75%, 52%, 0.8);
+}
+
+.order-button:hover{
+    color: var(--header-font);
+    cursor: pointer;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid var(--link-bg);
+    outline-offset: 2px;
+}
+
+@media (min-width: 40rem) {
+    body {
+        background-image: url(../images/pattern-background-desktop.svg);
+        background-size: cover;
+    }
+}
