@@ -4,7 +4,7 @@ A stats preview card built from a [Frontend Mentor](https://www.frontendmentor.i
 
 ## Live Site
 
-[View live site](#) <!-- add deployed URL -->
+[View live site](https://tesidrah.github.io/frontend-learning-log/newbie/stats-preview-card-component/)
 
 ## Built With
 
