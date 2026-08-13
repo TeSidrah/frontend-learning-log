@@ -2,7 +2,7 @@
 
 Frontend Mentor challenge — a responsive FAQ accordion built with semantic HTML, CSS, and vanilla JavaScript.
 
-🔗 [Live demo](#) · [Challenge](https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz)
+🔗 [Live demo](https://tesidrah.github.io/frontend-learning-log/newbie/FAQ accordion/) · [Challenge](https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz)
 
 ## What this is
 
