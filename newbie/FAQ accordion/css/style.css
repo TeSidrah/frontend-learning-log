@@ -1,0 +1,140 @@
+:root {
+    --card-bg: hsl(0, 100%, 100%);
+    --body-bg :hsl(275, 100%, 97%);
+    --text-muted: hsl(292, 16%, 49%);
+    --headers-text: hsl(292, 42%, 14%);
+    --active-state: hsl(292, 71%, 38%);
+    --border-color: hsla(282, 12%, 84%, 0.57);
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--body-bg);
+    background-image: url(../images/background-pattern-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 100dvh;
+    padding: 1.5rem 0;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: var(--card-bg);
+    width: 90%;
+    max-width: 40rem;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 1rem;
+    gap: 1.5rem;
+}
+
+h1,
+h2 {
+    color: var(--headers-text);
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.questions-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+ul {
+    list-style: none;
+}
+
+.question-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.question-item:not(:last-child) {
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 1rem;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+    transition: color 0.2s ease;
+}
+
+.item-text {
+    color:var(--text-muted);
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.close .minus,
+.close .item-text {
+    display: none;
+}
+
+.close .plus {
+    display: block;
+}
+
+.plus {
+    display: none;
+}
+
+.minus {
+    display: block;
+}
+
+button:hover {
+    color: var(--active-state);
+}
+
+button:focus-visible{
+    color: var(--active-state);
+    outline: 2px solid var(--active-state);
+    outline-offset: 0.25rem;
+}
+
+@media screen and (min-width: 45rem) {
+    body {
+        background-image: url(../images/background-pattern-desktop.svg);
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+    
+}
