@@ -14,6 +14,7 @@ Each challenge has its own folder with its own README, source, and live demo.
 - [order-summary-component](newbie/order-summary-component) — [live demo](https://tesidrah.github.io/frontend-learning-log/newbie/order-summary-component/)
 - [stats-preview-card-component](newbie/stats-preview-card-component/) — [live demo](https://tesidrah.github.io/frontend-learning-log/newbie/stats-preview-card-component/)
 - [FAQ-accordion](newbie/FAQ-accordion/) — [live demo](https://tesidrah.github.io/frontend-learning-log/newbie/FAQ-accordion/)
+- [3-column-preview-card-component](newbie\3-column-preview-card-component)— [live demo](https://tesidrah.github.io/frontend-learning-log/newbie/3-column-preview-card-component/)
 ## Junior
 - [testimonials-grid-section](junior/testimonials-grid-section) — [live demo](https://tesidrah.github.io/frontend-learning-log/junior/testimonials-grid-section/)
 New challenges get added to this repo, under their tier, as they're completed.
